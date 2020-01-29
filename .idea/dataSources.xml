@@ -7,11 +7,25 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/postgres</jdbc-url>
     </data-source>
-    <data-source source="LOCAL" name="d3c9cvlvqdogtc@ec2-46-51-190-87.eu-west-1.compute.amazonaws.com" uuid="0572d98d-066e-481e-b0e0-dbe125df10b9">
+    <data-source source="LOCAL" name="PostgreSQL - d3c9cvlvqdogtc@ec2-46-51-190-87.eu-west-1.compute.amazonaws.com" uuid="0572d98d-066e-481e-b0e0-dbe125df10b9">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://ec2-46-51-190-87.eu-west-1.compute.amazonaws.com/d3c9cvlvqdogtc</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="db" uuid="b344631a-80a2-416a-baaa-3a305443f088">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\vmadmin\PycharmProjects\M151_Adrian\db.sqlite3</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.25.1/license.txt</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.25.1/sqlite-jdbc-3.25.1.jar</url>
+        </library>
+      </libraries>
     </data-source>
   </component>
 </project>
