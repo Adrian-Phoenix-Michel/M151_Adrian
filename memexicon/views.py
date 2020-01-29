@@ -10,14 +10,7 @@ def memexicon_submission(request):
         if form.is_valid():
             memexicon = form.save(commit=False)
             memexicon.save()
-            return render(request, 'memexicon.html', {'form': form})
-        else:
-            error = form.errors
-            return render(request, 'memexicon.html', {
-                'form': form,
-                'alert': error
-            })
     else:
         form = MemesForm()
-        return render(request, 'memexicon.html', {'form': form})
+    return render(request, 'memexicon_submission.html', {'form': form})
 
