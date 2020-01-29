@@ -1,11 +1,13 @@
 from django.db import models
 
+
 # Create your models here.
 
 class Memes(models.Model):
     meme_img = models.ImageField()
     meme_name = models.CharField(max_length=50)
     popularity = models.IntegerField()
+
 
 class MemesInDetail(models.Model):
     meme_id = models.ForeignKey(Memes, on_delete=models.CASCADE)
