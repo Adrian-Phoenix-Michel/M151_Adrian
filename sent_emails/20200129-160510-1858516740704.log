@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: adrian.p.michel@hotmail.com
+Date: Wed, 29 Jan 2020 15:05:10 -0000
+Message-ID: <158031031051.2124.16423692864672128143@bmWP2.localdomain>
+
+
+You're receiving this email because you requested a password reset for your user account at 127.0.0.1:8000.
+
+Please go to the following page and choose a new password:
+
+http://127.0.0.1:8000/accounts/reset/MQ/5dj-395b7cf722654b50d725/
+
+Your username, in case you’ve forgotten: Admin
+
+Thanks for using our site!
+
+The 127.0.0.1:8000 team
+
+
+
+-------------------------------------------------------------------------------

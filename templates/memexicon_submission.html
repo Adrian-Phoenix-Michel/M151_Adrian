@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <p><a href="{% url 'home' %}">< Back</a></p>
+    <p><a href="{% url 'memexicon:discovery' %}">Discover Memes</a></p>
+    <h2>Memexicon Submission</h2>
+    <form method="POST" class="post-form" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Submit</button>
+    </form>
+
+{% endblock %}
