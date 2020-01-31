@@ -12,7 +12,7 @@
             {% for meme in meme_list %}
                 <li>
                     <!--<img src="{{# meme.meme_img.url #}}" alt="">-->
-                    <a href=""><img src="{{ STATIC_URL }}{{ meme.meme_img }}" alt=""> {{ meme_list.get.meme_name }} {{ meme_list.get.popularity }}/100</a>
+                    <a href=""><img src="../{{ STATIC_URL }}{{ meme.meme_img }}" alt=""> {{ meme_list.get.meme_name }} {{ meme_list.get.popularity }}/100</a>
                 </li>
             {% endfor %}
         </ul>
