@@ -2,7 +2,6 @@ from django.shortcuts import render
 from memexicon.models import Memes
 from memexicon.forms import MemesForm
 from django.views import generic
-from PIL import Image
 from django.conf import settings
 
 
