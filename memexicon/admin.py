@@ -10,3 +10,5 @@ class MemesAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Memes, MemesAdmin)
+
+

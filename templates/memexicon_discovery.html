@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <p><a href="{% url 'home' %}">< Back</a></p>
+    <p><a href="{% url 'memexicon:memexicon_submission' %}">Submit Meme</a></p>
+    <h2>Memexicon Discovery</h2>
+
+    <form method="get" class="get-form" enctype="multipart/form-data">
+        {% if meme_list %}
+        <ul>
+            {% for meme in meme_list %}
+                <li>
+                    <!--<img src="{{# meme.meme_img.url #}}" alt="">-->
+                    <a href=""><img src="{{ STATIC_URL }}{{ meme.meme_img }}" alt=""> {{ meme_list.get.meme_name }} {{ meme_list.get.popularity }}/100</a>
+                </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+            <p>There are no books in the library.</p>
+        {% endif %}
+    </form>
+
+{% endblock %}
